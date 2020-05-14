@@ -1,280 +1,63 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* main css*/
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*helper classes*/
-
-
-
-/*general*/
-a{
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-}
-ul{
-    list-style: none;
-}
-
-/*main css*/
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
 body{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    background-color: white;
-    color: #333333;
+    font-family: Lato;
 }
-
-/*header section*/
+/* hero section */
 #header{
-    background-image: linear-gradient(rgba(76, 49, 131,0.28),rgba(144, 93, 149, 0.33)),url("../img/hero.png") ;
-    height: 748px;
-    width: 100%;
-}
-
-.container{
-    width: 70%;
-    margin: 0 15% 0 15%;
-    padding-top: 60px;
-}
-
-.navigation li{
-    text-transform: uppercase;
-}
-
-
-.logo{
-    background-image: url("../img/logo.png");
-    height: 29px;
-    width: 193px;
-}
-
-nav ul{
-    list-style: none;
+    background: linear-gradient(rgba(86,56,151,0.6),rgba(86,56,151,0.6)),url('/src/img/hero.png');
     color: white;
+    padding: 10px;
 }
-.hero{
-    width: 100%;
-    padding: 180px 10% 0 10%;
-}
-
-.hero-header{
-    text-align: center;
+#header h2{
+    font-size: 65x;
+    letter-spacing: 2px;
 }
 
-.hero-header h1{
-    font-size: 45px;
-    font-weight: bold;
-    color: white;
-}
-
-.hero-header p{
-    color: white;
+.navbar a{
+    color : white;
 }
 
 .cta{
-    width: 100%;
-    margin-top: 85px;
-    text-align: center;
+   margin-top: 20px;
 }
-
-.cta a{
-    width: 184px;
-
+.cta > a{
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: 20px;
     letter-spacing: 2px;
-    border: solid 1px #fff;
-    border-radius: 15px;
+    transition: background 2s ease, border 2s ease;
 }
-/*Awareness section*/
-#awareness .right{
-    width: 50%;
-}
-#awareness .left{
-    width: 50%;
+.cta > a:hover{
+    background:  #593999;
+    border: 1px solid #593999;
+    transition: background 2s ease, border 2s ease;
 }
 
-#awareness .left h1{
+/* aawareness section */
+#awareness{
+    padding : 45px;
+    background-color: #ffffff;
+}
+
+#awareness h1{
     color: #e1e1e1;
-    font-size: 130px;
-    font-weight: bold;
+    font-size: 120px;
+    font-family: bold;
 }
 
-.right div{
-    display: grid;
-
+#awareness h2{
+    color:#333333;
 }
 
-.right h2{
-    margin-bottom: 35px;
-}
-.right p{
-    margin-bottom: 25px;
+#awareness p{
+    color: #b3b3b3;
 }
 
-/*ecs section*/
-#ecs{
-    background: url("../img/ecs1.png") no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-
-
-
-#ecs h2{
-    color: #9e8ec1;
-    margin-bottom: 5%;
-}
-
-#ecs p{
-    width: 60%;
-    margin-bottom: 5%;
-}
-
-#ecs a{
-    border: solid 1px #503392;
-    background-color: #503392;
-}
-
-/* Portfolio section */
-#portfolio{
-    height: 1130px;
-}
-
-
-#portfolio .top{
-    margin: 0 25% 0 25%;
-    text-align: center;
-}
-
-#portfolio h2{
-    margin-bottom: 8px;
-    font-size: 50px;
-
-}
-
-#portfolio p{
-    margin-bottom: 25px;
-
-}
-
-#portfolio li{
-margin-bottom: 30px;
-}
-
-
-#portfolio a{
-    border: solid 1px #000;
-    padding: 10px 25px;
-    color: #333333;
-}
-
-#portfolio a:hover{
-    background-color: #4e3391;
-    color: white;
-}
-
-/*media query*/
-@media only screen and (min-width: 768px){
-    #logo-nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .navigation ul{
-        display: flex;
-    }
-
-    .navigation li{
-        margin-left: 50px;
-        text-transform: uppercase;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: row;
-        flex-basis: 500px;
-        justify-content: flex-end;
-    }
-    #ecs .container{
-        display: flex;
-        justify-content: flex-start;
-    }
-    #ecs .left h2{
-        font-size: 35px;
-        font-weight: lighter;
-
-    }
-
-    #ecs .left{
-        width: 60%;
-        margin: 250px 0;
-    }
-    /*portfolio section*/
-    ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #portfolio li{
-        margin-left: 2%;
-    }
+.glyphicon{
+    font-size: 25px;
+    color : #777777;
 }
