@@ -37,7 +37,7 @@ body{
     transition: background 2s ease, border 2s ease;
 }
 
-/* aawareness section */
+/* awareness section */
 #awareness{
     padding : 45px;
     background-color: #ffffff;
@@ -61,3 +61,36 @@ body{
     font-size: 25px;
     color : #777777;
 }
+
+/* ecs section */
+#ecs{
+    background: url('/src/img/ecs.png');
+    background-size: cover;
+}
+#ecs h2{
+    color: #503392;
+    font-size: 40px;
+    font-family: "Lato Light";
+}
+#ecs p{
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+#ecs a, #ecs .glyphicon{
+   font-size: 18px;
+   color: #ffffff;
+   background-color: #503392;
+   padding: 15px;
+   letter-spacing: 1px;
+   text-decoration: none;
+}
+#ecs .glyphicon{
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#ecs a:hover .glyphicon{
+    opacity: 1;
+    transition: opacity 2s ease;
+} 
