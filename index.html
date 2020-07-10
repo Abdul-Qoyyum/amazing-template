@@ -8,6 +8,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,300&display=swap" rel="stylesheet">
 
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -19,7 +21,7 @@
 
 </head>
 <body>
-<section id="header" style="height: 100vh;">
+<section id="header">
 <div class="container">
      <div id="logo-nav" class="row justify-content-between">
      <div class="logo col-md-6" style="height: 50px;"></div>
@@ -132,24 +134,145 @@
 
 <section id="portfolio">
 <div class="container">
-    <div class="top">
-        <h2>Our Portfolio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-        <ul>
-            <li><a href="">All</a></li>
-            <li><a href="">Web</a></li>
-            <li><a href="">UI/UX</a></li>
-            <li><a href="">Photography</a></li>
-            <li><a href="">Branding</a></li>
-        </ul>
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center">Our Portfolio</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
     </div>
-    <div class="bottom">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+              <div class="row justify-content-center portfolio_link">
+                    <div class="col-md text-center"><a href="#">All</a></div>
+                    <div class="col-md text-center"><a href="#">Web</a></div>
+                    <div class="col-md text-center"><a href="#">UI/UX</a></div>
+                    <div class="col-md text-center"><a href="#">Photography</a></div>
+                    <div class="col-md text-center"><a href="#">Branding</a></div>
+                </div>
+            </div>
+        </div>
 
-    </div>
 
+        <div class="portfolio_images">
+
+            <div class="image-container">
+                    <img class="img-fluid" src="./src/img/rectangle8.png" alt="image">
+                    <div class="image-cover">
+                        <div class="icon-cover">
+                          <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="image-container">
+                <img class="img-fluid" src="./src/img/rectangle9c.png" alt="image">
+                <div class="image-cover">
+                    <div class="icon-cover">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="img-fluid" src="./src/img/rectangle9.png" alt="image">
+                <div class="image-cover">
+                    <div class="icon-cover">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="img-fluid" src="./src/img/rectangle9c2.png" alt="image">
+                <div class="image-cover">
+                    <div class="icon-cover">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="img-fluid" src="./src/img/rectangle9c2.png" alt="image">
+                <div class="image-cover">
+                    <div class="icon-cover">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="img-fluid" src="./src/img/rectangle9c32.png" alt="image">
+                <div class="image-cover">
+                    <div class="icon-cover">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="img-fluid" src="./src/img/rectangle9c31.png" alt="image">
+                <div class="image-cover">
+                    <div class="icon-cover">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img class="img-fluid" src="./src/img/rectangle9c3.png" alt="image">
+                <div class="image-cover">
+                    <div class="icon-cover">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="glyphicon glyphicon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
 </div>
 </section>
-
+<section id="statistics">
+<div class="container">
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col-md-3 stat-details">
+            <div class="glyphicon glyphicon-user"></div>
+            <h3 class="number"><span id="clients"></span><span>+</span></h3>
+             <p>Satisfied clients</p>      
+        </div>
+        <div class="col-md-3 stat-details">
+            <div class="glyphicon glyphicon-stats"></div>
+            <h3 class="number"><span id="projects"></span><span>+</span></h3>
+            <p>Projects completed</p>
+        </div>
+        <div class="col-md-3 stat-details">
+            <div class="glyphicon glyphicon-heart"></div>
+            <h3 class="number"> <span id="feedback"></span><span>+</span></h3>
+            <p>Positive feedbacks</p>
+        </div>
+        <div class="col-md-3 stat-details">
+            <div class="glyphicon glyphicon-gift"></div>
+            <h3 class="number"> <span id="freebies"></span><span>+</span></h3>
+            <p>Freebies Released</p>
+        </div>
+    </div>
+</div>
+</section>      
+<section id="contact" style="height: 100vh;"></section>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -160,5 +283,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+    <script src="./src/js/animationCounter.min.js" charset="utf-8"></script>
+    <script src="./src/js/jquery.waypoints.min.js"></script>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>
