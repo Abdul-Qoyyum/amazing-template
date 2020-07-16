@@ -98,6 +98,7 @@
 /* Portfolio section */
 #portfolio{
     padding:45px;
+    font-family: 'lato',sans-serif;
 }
 
 #portfolio .row{
@@ -111,8 +112,17 @@
     color: #333333;
     display: block;
     margin-top: 10px;
-    margin-bottom: 10x;   
+    margin-bottom: 10x;
+    transition: background-color 1s ease-in, color 1s ease-in, border 1s ease-in;   
 }
+
+.portfolio_link a:hover{
+    background-color: #4e3391;
+    color: #ffffff;
+    border : 2px solid #ffffff;
+    transition: background-color 1s ease-out, color 1s ease-out, border 1s ease-out;
+}
+
 .portfolio_images{
     display: grid;
     grid-gap: 0.5rem;
@@ -297,4 +307,28 @@ textarea{
 /* footer section */
 #footer{
     background-color: #1f1f1f;
+    padding:5px;
+    color: #555555;
+    font-size: 18px;
+    font-family: 'lato',sans-serif;
+}
+#footer .container .row{
+    padding: 5px;
+}
+.fa{
+    font-size: 18px;
+    color:#ffffff;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+@media (max-width:768px){
+   .copyright{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 15px;
+   }
 }
