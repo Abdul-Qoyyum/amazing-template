@@ -7,7 +7,7 @@ $(document).ready(function () {
         delay: 100,
     });
     $('#projects').animationCounter({
-        start: 0,
+        start: 0, 
         end: 4510,
         step: 1,
         delay: 200,
@@ -24,5 +24,22 @@ $(document).ready(function () {
         step: 1,
         delay: 400,
     });
+
+
+    // hamburger toggling
+    $(".hamburger").click(function(){
+
+        $(".navigation").toggleClass('toggleNav');
+
+        $(".hamburger-bar").toggleClass("activate",2000);
+
+    });
+
+    //change hamburger color
+    $('#awareness').waypoint({
+        handler: function (direction) {
+            $('.hamburger-bar').toggleClass('red')
+        }
+    })
 
 });

@@ -1,22 +1,160 @@
 @import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
 
-/* body{
-    font-family: Lato;
-} */
+body{
+  background-color: #ffffff;
+}
+
+/* navigation section */
+#logo-nav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 40px;
+}
+
+.logo{
+    background-image:url('../img/logo.png');
+    background-repeat: no-repeat;
+    height: 29px;
+    width: 193px;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.link{
+   color: #ffffff !important;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 24px;
+   text-transform: capitalize;
+   display: block;
+   padding-bottom: 5px;
+   border-bottom: none;
+   transition: border-bottom 2s ease-in;
+}
+
+
+.link:hover{
+   border-bottom: 1px solid #ffffff;
+   transition: border-bottom 2s ease-out;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width : 749px){
+.navigation{
+    position: fixed;
+    height: 100vh;
+    background-color: #232323;
+    width: 60%;
+    right: -300px;
+    top: 0;
+    padding-top: 35px;
+    z-index: 100;
+}
+
+.logo{
+    position: absolute;
+    left: -5px;
+}
+
+.toggleNav {
+    animation: toggleNav 0.5s linear forwards;
+}
+
+
+@keyframes toggleNav {
+    from {
+        right : -300px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+.nav{
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #232323;
+    position: relative;
+    width: 100%;   
+}
+
+/* hamburger section */
+.hamburger{
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 5px;
+    position: fixed;
+    right:25px;
+    z-index: 500;
+}
+
+.hamburger-bar{
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 300;
+}
+
+.hamburger-bar > div{
+    border: 2px solid #fff;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.red > div{
+   border: 2px solid #ed145b;
+}
+
+
+.activate > div:nth-child(1){
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.activate > div:nth-child(2){
+    opacity: 0;
+}
+.activate > div:nth-child(3){
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+}
+
+
 /* hero section */
 #header{
     background: linear-gradient(rgba(86,56,151,0.6),rgba(86,56,151,0.6)),url('../img/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
-    padding: 10px;
-    height:100vh;
+    padding: 30px;
+    height:95vh;
 }
-#header h2{
-    font-size: 65x;
+#header h1{
+    font-size: 35px;
     letter-spacing: 2px;
+    font-weight: bold;
 }
-
-.navbar a{
-    color : white;
+#header span{
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 .cta{
@@ -30,12 +168,12 @@
     font-size: 15px;
     border-radius: 20px;
     letter-spacing: 2px;
-    transition: background 2s ease, border 2s ease;
+    transition: border 2s ease;
 }
 .cta > a:hover{
     background:  #593999;
     border: 1px solid #593999;
-    transition: background 2s ease, border 2s ease;
+    transition: border 2s ease;
 }
 
 /* awareness section */
@@ -71,7 +209,7 @@
 #ecs h2{
     color: #503392;
     font-size: 40px;
-    font-family: "Lato Light";
+    font-family: "lato Light", sans-serif;
 }
 #ecs p{
     color: #7a7a7a;
